@@ -1,0 +1,117 @@
+/* •_• */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --topbar-color: #ffffff;
+    --text-color: #000;
+    --background-color: #efefef;
+    --border-color: #eaeaea;
+}
+
+body{
+    padding:0;
+    margin:0;
+    color: #000;
+    -webkit-tap-highlight-color: transparent;
+    background: var(--background-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.topbar{
+    background: var(--topbar-color);
+    display:flex;
+    padding:20px 25px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.topbar .title{
+    font-size: 25px;
+    font-weight:500;
+}
+.topbar i{
+    font-size: 25px;
+    display:none;
+}
+
+.topbar .navigation a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+main{
+    position: relative;
+    margin-top:25px;
+}
+
+main .welcome-container{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .welcome-container hr{
+    width: 20%;
+    border:0.5px solid #777777;
+}
+
+main .welcome-container .soon{
+    color: #555555;
+    margin-top:25px;
+    margin-bottom:0;
+}
+
+main .welcome-title-container{
+    position: relative;
+    width:100%;
+    padding: 2em 1.25em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--topbar-color);
+    border-radius:12px;
+}
+
+main .welcome-title-container .welcome-title{
+    margin:0;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+main .welcome-title-container .description{
+    margin-bottom:45px;
+    padding: 0 20px;
+}
+
+main .welcome-title-container .join-button{
+    margin: 0 20px;
+    background:#5865ff;
+    color: #ffffff;
+    padding:15px 25px;
+    position: relative;
+    border-radius:10px;
+}
+
+main .welcome-title-container .join-button:active{
+    user-select: none;
+    background: #4250ce;
+}
+
+@media (min-width: 900px) {
+    .topbar .navigation {
+        display: block;
+    }
+    .topbar{
+        padding:20px 45px;
+    }
+}
+@media (min-width:400px) {
+    main .welcome-title-container{
+        width: 400px;
+    }
+}
