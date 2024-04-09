@@ -1,29 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GDBot</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     </head>
     <body>
-        <nav class="topbar">
-            <label class="title">GDBot</label>
-            <i class="bi bi-list"></i>
-            <div class="navigation">
-                <a id="Github" href="https://github.com/AlikSusFootages/gdbot/">Github</a>
-            </div>
-        </nav>
-        
-        <main>
-            <div class="welcome-container">
-                <div class="welcome-title-container">
-                    <h2 class="welcome-title">Welcome!</h2>
-                    <p class="description">Thank you for deciding to visit our site! Join to our discord server to use our bot!</p>
-                    <a class="join-button">Discord Server</a>
-                    <p class="soon">More soon...</p>
+        <nav>
+            <div class="navbar is-link">
+                <div class="navbar-brand">
+                    <a href="" class="navbar-item"><strong>GDBot</strong></a>
+                    <a role="button" id="navbarBurger" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a>
+                </div>
+                <div class="navbar-menu navbarBasic">
+                    <div class="navbar-end">
+                        <a href="" class="navbar-item is-active">Home</a>
+                        <a href="https://discord.com/invite/uFyw949cxG" class="navbar-item">Discord</a>
+                        <a href="https://github.com/AlikSusFootages/gdbot-web" class="navbar-item">Github</a>
+                        <div class="buttons">
+                            <a href="#" class="button is-light" disabled>Sign up</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </nav>
+        <section>
+            <div class="landing">
+                <div class="main-content">
+                    <svg class="main-icon" width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_37)">
+<rect width="120" height="120" fill=""/>
+<path d="M0 6C0 2.68629 2.68629 0 6 0V0V6H0V6Z" fill="white"/>
+<rect x="6" width="108" height="6" fill="white"/>
+<path d="M114 0V0C117.314 0 120 2.68629 120 6V6H114V0Z" fill="white"/>
+<rect y="6" width="6" height="108" fill="white"/>
+<path d="M0 114H6V120V120C2.68629 120 0 117.314 0 114V114Z" fill="white"/>
+<rect x="6" y="114" width="108" height="6" fill="white"/>
+<path d="M114 114H120V114C120 117.314 117.314 120 114 120V120V114Z" fill="white"/>
+<rect x="114" y="6" width="6" height="108" fill="white"/>
+<rect x="27" y="23" width="26" height="5" fill="white"/>
+<rect x="27" y="44" width="26" height="5" fill="white"/>
+<rect x="27" y="28" width="5" height="16" fill="white"/>
+<rect x="48" y="28" width="5" height="16" fill="white"/>
+<rect x="67" y="23" width="26" height="5" fill="white"/>
+<rect x="67" y="44" width="26" height="5" fill="white"/>
+<rect x="67" y="28" width="5" height="16" fill="white"/>
+<rect x="88" y="28" width="5" height="16" fill="white"/>
+<rect x="20" y="59" width="79" height="5" fill="white"/>
+<rect x="20" y="77" width="79" height="6" fill="white"/>
+<rect x="20" y="64" width="5" height="13" fill="white"/>
+<rect x="94" y="64" width="5" height="13" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2_37">
+<rect width="120" height="120" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+                    <h1 class="title">GDBot</h1>
+                    <p class="subtitle">This is a Discord bot that gives data about the player, level, from the Robtop's game «Geometry Dash». This bot uses Web-API to fetch data.</p>
+                    <a href="https://discord.com/invite/uFyw949cxG" class="button is-link">Discord</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="sign-in">
+                <h1 class="title">Sign In</h1>
+                <p class="subtitle">Log In for interact with your Discord Account & GD Account!</p>
+                <a href="#" class="button is-link" disabled>Log In with Discord</a>
+                <p class="subtitle soon-feature">soon feature</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <h1 class="title has-text-centered">Credits</h1>
+            <hr class="footer-hr">
+            <p class="subtitle has-text-centered">Website: .ftgs#0000</p>
+            <p class="subtitle has-text-centered">Idea: GDBrowser by GDColon</p>
+            <p class="subtitle has-text-centered">Framework: Bulma by Jeremy Thomas</p>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
